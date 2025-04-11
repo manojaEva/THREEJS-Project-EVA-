@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+body {
+    padding-top: 80px; /* Adjust based on your h1 height */
+    background-color: #000000;
+}
+
+h1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: rgb(175, 160, 160);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000; /* keep it on top */
+    font-size: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#brand-logo {
+    width: 50px;  /* Set the size of the logo */
+    height: auto;
+    margin-right: 10px;  /* Add some space between the logo and the text */
+}
+
+#info-box {
+    position: fixed;
+    top: 100px; /* below the fixed heading */
+    left: 20px;
+    width: 300px;
+    height: 400px; 
+    background-color: #4aac9f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    color: #000000;
+    overflow-y: scroll;  /* Allow scrolling inside the box */
+    overflow-x: hidden;
+}
+/* Style for the refresh button at the top-right */
+#refresh-btn {
+    position: fixed;
+    top: 20px;    /* Distance from the top of the page */
+    right: 20px;  /* Distance from the right side of the page */
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+#refresh-btn:hover {
+background-color: #646cff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+#div-button {
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    max-height: 80vh;           /* limit height to 80% of the viewport */
+    overflow-y: auto;           /* scroll if buttons overflow vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.8);  /* semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    scrollbar-width: thin; 
+}
+button {
+    margin: 5px;
+    background-color: #0dd9e0; /* Green background */
+    color: rgb(0, 16, 233);              /* White text */
+    padding: 15px 32px;        /* Padding inside the button */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove underline from text */
+    display: inline-block;     /* Make it behave like an inline element */
+    font-size: 16px;           /* Set font size */
+    border: none;              /* Remove border */
+    border-radius: 8px;        /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;/* Smooth transition for background change */
+  }
+  button:hover {
+    background-color: #ffffff;
+      transform: translateZ(-1px);
+      box-shadow: 0 6px 14px rgb(0, 0, 0);
+      border: 2px solid black;
+    }
+
+    #myCanvas {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
