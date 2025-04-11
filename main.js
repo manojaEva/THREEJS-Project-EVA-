@@ -1,5 +1,6 @@
+
 import * as THREE from 'three';
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 //#region scene , camera, Renderer,OrbitControls 
 // creating a scene 
 const scene = new THREE.Scene();
@@ -1283,7 +1284,7 @@ function task15() {
     let h = 100, w = 80, space = 40;
 
     function handleBase() {
-        const light = new THREE.DirectionalLight(0x909090, 5);
+        const light = new THREE.DirectionalLight(0x909090, 0.1);
         light.position.set(100, 200, 500);
         scene.add(light);
 
